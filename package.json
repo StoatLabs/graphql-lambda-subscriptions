@@ -11,8 +11,8 @@
   "engines": {
     "node": "^14.13 || >=16"
   },
-  "repository": "git@github.com:reconbot/graphql-lambda-subscriptions.git",
-  "homepage": "https://github.com/reconbot/graphql-lambda-subscriptions",
+  "repository": "git@github.com:StoatLabs/graphql-lambda-subscriptions.git",
+  "homepage": "https://github.com/StoatLabs/graphql-lambda-subscriptions",
   "scripts": {
     "test": "mocha",
     "build": "npm run clean && tsc -p tsconfig-build.json && rollup -c && node -r esbuild-register bundle-types",
