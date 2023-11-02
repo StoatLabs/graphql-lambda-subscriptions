@@ -15,7 +15,7 @@ export const publish = (serverPromise: Promise<ServerClosure> | ServerClosure): 
     const payload = await execute({
       schema: server.schema,
       document: parse(sub.subscription.query),
-      rootValue: event,
+      rootValue: event.payload,
       contextValue: await buildContext({ server, connectionInitPayload: sub.connectionInitPayload, connectionId: sub.connectionId }),
       variableValues: sub.subscription.variables,
       operationName: sub.subscription.operationName,
