@@ -21,7 +21,8 @@
     "format": "eslint lib/**/*.ts lib/*.ts --fix",
     "lint": "tsc && eslint lib/**/*.ts lib/*.ts",
     "prepublishOnly": "npm run build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "npm run build"
   },
   "keywords": [
     "graphql",
